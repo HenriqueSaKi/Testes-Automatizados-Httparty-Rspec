@@ -1,7 +1,7 @@
 module Contato
     include HTTParty
     #URL base de contatos
-    base_uri 'https://api-de-tarefas.herokuapp.com'
+    base_uri CONFIG["url_padrao"]
     #opções do meu service
     format :json
     headers Accept: 'application/vnd.api+json',
